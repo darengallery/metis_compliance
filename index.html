@@ -21,8 +21,7 @@
 
     <nav class="navbar navbar-expand-md navbar-light sticky-top bg-light">
         <div class="container-fluid">
-            <img src="images/metis_logo.png" alt="metis logo" class="img-fluid" width="60vw">
-            <h1 class="pl-5">Metis</h1>
+            <img src="images/metis_header_750.png" alt="metis logo" class="img-fluid">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
             </button>
@@ -31,17 +30,21 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Our Company</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="QCFR.html" target="_blank">Quality Control file reviews</a>
+                            <a class="dropdown-item" href="ACR.html" target="_blank">Annual Compliance reviews</a>
+                            <a class="dropdown-item" href="MAP.html" target="_blank">Mentoring Audit Practices</a>
+                            <a class="dropdown-item" href="CPD.html" target="_blank">CPD courses</a>
+                            <a class="dropdown-item" href="more.html" target="_blank">more</a>
+
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html#team">Our Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Our Clients</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="legal.html">Legal</a>
@@ -50,11 +53,53 @@
             </div>
         </div>
     </nav>
+
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/accounting-analytics-balance-black-and-white-209224.jpg" class="d-block w-100" alt="first slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <button class="btn btn-primary">Click</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/black-calculator-near-ballpoint-pen-on-white-printed-paper-53621.jpg" class="d-block w-100" alt="second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/white-graphing-paper-164686.jpg" class="d-block w-100" alt="third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
     <div class="container-fluid">
         <div class="row pt-5">
             <div class="col-lg-8 col-md-10 col-sm-12">
                 <div class="card shadow">
-                    <img class="card-img-top w-25" src="images/metis_logo.png" alt="Card image cap">
                     <div class="card-body">
                         <h3 class="card-title">Metis</h3>
                         <P>The ethos of the company is to be client focused. Understanding that time is sometimes of the essence, especially, when hot file reviews need to be undertaken. Metis aims to offer a cost effective solution to compliance for all
@@ -94,55 +139,88 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-2">
+            <div class="col-lg-4 col-md-6 col-sm-8">
                 <div class="card shadow">
-                    <img class="card-images/img-top w-25" src="images/metis_logo.png" alt="Card image cap">
                     <div class="card-body">
-                        <h3>Code File Reviews</h3>
-                        <h3>(Quality Control File Reviews)</h3>
-                        <P>They are a vital part of your practice’s on-going quality control procedures, they are also sometimes a specific requirement of your Regulator.</P>
-                        <a href="QCFR.html" class="btn btn-sm bg-info">more..</a>
+                        <h2>About the company</h2>
+                        <P>Metis is a relatively new company being incorporated in 2018. However, its principal Matthew Shaw has over 25 years experience.</P>
+                        <p>Metis aims to offer a cost effective solution to compliance for all accountancy practices irrespective of their size or nature.</p>
+                        <p>We can offer the following services:
+                            <ul>
+                                <li>Cold file reviews</li>
+                                <li>Hot file reviews</li>
+                                <li>Annual Compliance Reviews (Whole Practice/Client Money/AML/DPB</li>
+                                <li>Help plan for a regulatory compliance visit and addressing the points raised by them</li>
+                                <li>Training</li>
+                                <li>Technical advice and ad-hoc consultancy</li>
+                            </ul>
+                            We have also secured for our clients a discount on the costs of software provided by AMLCC.
+                        </p>
                     </div>
                 </div>
-                <div class="card shadow pt-5">
-                    <img class="card-images/img-top w-25" src="images/metis_logo.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h3>CPD Courses</h3>
-                        <P>Metis runs CPD courses for Regulatory Bodies, Training Consortia, Local Groups, in-house financial reporting departments of larger companies and accountancy practices.</P>
-                        <a href="CPD.html" class="btn btn-sm bg-info">More..</a>
-                    </div>
-                </div>
-                <div class="card shadow">
-                    <img class="card-images/img-top w-25" src="images/metis_logo.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h3>Mentoring audit practices</h3>
-                        <P>Metis Audit Practice Mentoring Services is designed to help practices who are finding undertaking audit work challenging. </P>
-                        <a href="MAP.html" class="btn btn-sm bg-info">More..</a>
-                    </div>
-                </div>
-                <div class="card shadow">
-                    <img class="card-images/img-top w-25" src="images/metis_logo.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h3>'Practical hands on assistance'</h3>
-                        <h5>Resolving Problems</h5>
-                        <P>Sometimes cash flows and consolidations just don’t work, irrespective of the amount of time you spend on them, a ‘fresh pair of eyes’ may be the answer. Due to Metis’s costing structure we can provide a cost-effective solution
-                            to resolve your problems. </P>
-                        <h5>Subcontracting Staff</h5>
-                        <P>Staffing shortages on audit or assurance assignments or a particularly complex audit needs heading up? On a subcontracted basis Metis can provide senior staff to cover, for example, a stock take attendance or even manage an audit.
-                            Each situation is unique but if we have the staff availability then we will endeavour to help, please call to discuss your individual needs.</P>
-                        <a href="#" class="btn btn-sm bg-info">More..</a>
-
-                    </div>
+                <div class="card-body">
+                    <img class="card-images/img-top w-25 rounded" src="images/DSC_0004.JPG" alt="Card image cap">
+                    <h3>Matthew Shaw</h3>
+                    <P>Matthew has a wealth of experience holding the following professional qualifications FCA, FCCA and FFA . He was previously the technical director of one of the Training Consortias. </P>
+                    <p>He lectures on pensions, charities, SRA assignments, UK GAAP (including FRS 102 and FRS 105), anti-money laundering, auditing and company law</p>
+                    <p>Due to his mentoring roles and the fact that he also undertakes client facing audit work for one of our largest clients, he is able to give practical and constructive advice.</p>
+                    <p>
+                        <a href="https://uk.linkedin.com/in/matthew-shaw-6157a684">linkedin.com/matthew-shaw-6157a684</a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-center m-auto">
+                <h2>Clients say</h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item carousel-item active">
+                            <p class="testimonial">We have worked with Metis’s Managing Director for many years. As a busy two partner general practice it is vital that we can get prompt, clear and concise answers to our questions when needed. Metis offers us the services that
+                                meet our needs regarding technical, training and compliance. We have always found the response time of the helpline exemplary, and have found technical advice well considered and practical. </p>
+                            <p class="overview"><b>Clive Purdy</b>, Partner, Devines Chartered Accountants</p>
+                        </div>
+                        <div class="item carousel-item">
+                            <p class="testimonial">Mathew Shaw has been a professional adviser to our firm for 25 years.</p>
+                            <p>In that time Matthew has provided our firm with the following services:
+                                <ul style="text-align: justify;">
+                                    <li>Technical helpline</li>
+                                    <li>Quarterly technical updates</li>
+                                    <li>Hot and cold audit file reviews</li>
+                                    <li>Tailored technical courses for specialised areas of our practice, including SRA Accounts Rules, pension audits, group accounts/audit and IFRS reporting</li>
+                                </ul>
+                            </p>
+                            <P>His technical expertise is outstanding and we have always found him to offer both accurate and practical advice on all aspects of UK and international reporting and audit issues.</P>
+                            <p>We have no hesitation in recommending Matthew to any firm seeking technical advice and support.</p>
+                            <p class="overview"><b>Martin J. Rooney(senior partner)/Jane Lowden(partner)</b>, F.W.Smith, Riches & Co</p>
+                        </div>
+                        <div class="item carousel-item">
+                            <p class="testimonial">Rickard Luckin including its predecessor practices have known Matthew Shaw since 1990. He trained with Bird Luckin before continuing to work with us on a consultancy basis, first through one of the training consortia, before
+                                setting up his own Practice in 2018. He has worked on a number of projects including: undertaking cold file reviews, assisting on complex audits, plus offering technical and ethical advice. He has a very board range of
+                                technical and ethical knowledge covering companies, LLPs, SAR assignments, Charities and Pension Schemes which is vital when assisting a medium-sized practice with a diverse client portfolio</p>
+                            <p class="overview"><b>Joanna Southon(partner)</b>, Rickard Lukin</p>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-
     <div class="container-fluid">
         <div class="row">
             <div class="col">
@@ -155,6 +233,10 @@
             <div class="col"></div>
             <div class="col">
                 <img src="images/ACCA Member Logo Pack (Updated April 2016)/LOGOS FOR ONLINE USE/ACCA LOGO RED.png">
+            </div>
+            <div></div>
+            <div class="col">
+                <img src="images/amlcc.jpg">
             </div>
         </div>
     </div>
