@@ -1,10 +1,5 @@
-.carousel-inner {
-    height: 75vh;
-}
-
-.carousel-caption {
-    top: 0;
-    bottom: auto;
+#logo {
+    height: 4vw;
 }
 
 h2 {
@@ -23,7 +18,7 @@ h2::after {
     position: absolute;
     margin: 0 auto;
     height: 3px;
-    background: orange;
+    background: red;
     left: 0;
     right: 0;
     bottom: -10px;
@@ -40,8 +35,9 @@ h2::after {
 }
 
 .carousel .item {
+    color: #999;
     font-size: 14px;
-    text-align: center;
+    text-align: justify;
     overflow: hidden;
     min-height: 290px;
 }
@@ -68,17 +64,23 @@ h2::after {
 
 .carousel .overview {
     font-style: italic;
+    text-align: center;
 }
 
 .carousel .overview b {
     text-transform: uppercase;
-    color: orange;
+    color: red;
+    text-align: center;
+}
+
+.carousel .center {
+    text-align: center;
 }
 
 .carousel .carousel-control {
     width: 40px;
     height: 40px;
-    margin-top: -10px;
+    margin-top: -20px;
     top: 50%;
     background: none;
 }
@@ -92,10 +94,25 @@ h2::after {
     text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
 }
 
+.carousel .carousel-indicators {
+    bottom: -40px;
+}
+
 .carousel-indicators li,
 .carousel-indicators li.active {
     width: 10px;
     height: 10px;
     margin: 1px 3px;
-    border-radius: 10%;
+    border-radius: 50%;
+}
+
+.carousel-indicators li {
+    background: #999;
+    border-color: transparent;
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-indicators li.active {
+    background: #555;
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
 }
