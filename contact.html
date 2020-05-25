@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags for Bootstrap 4 -->
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Daren Gallery">
+    <meta name="description" content="Soccer coaching programmes for schools, teams and clubs. Qualified Coaches, all specifically tailored to your needs">
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/contact-form.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="https://kit.fontawesome.com/dee6c1b213.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+    <div class="container-fluid" id="base">
+        <div class="container" id="contact-section">
+            <div class="row my-5">
+                <div class="col-md-8 mx-auto" id="second-base">
+                    <h2>Contact Us</h2>
+                    <form id="contact-form" method="post" action="/PHP/sendmail.php" role="form"><br>
+                        <div class="controls">
+                            <p class="text-right">* required</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Name *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter you name" required="required" data-error="name is required">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Contact email *</label>
+                                        <input id="email" type="email" name="playersName" class="form-control" placeholder="Please enter contact email" required="required" data-error="email is required">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_phone">Contact telephone *</label>
+                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter contact number" required="required" data-error="number is required">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_enquiry">Nature of the enquiry </label>
+                                        <textarea name="enquiry" id="form_enquiry" class="form-control" placeholder="nature of the enquiry" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <img src="images/metis_header.png" class="img-fluid pb-5">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+
+
+</body>
