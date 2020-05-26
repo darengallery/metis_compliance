@@ -12,16 +12,11 @@
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
-
     <script src="https://kit.fontawesome.com/dee6c1b213.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
     <div class="container-fluid" id="base">
-        <div class="container-fluid mt-2" id="second-base">
-            <img src="images/metis_header.png" alt="metis_header" class="img-fluid py-2">
-        </div>
         <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="second-base">
             <button class="navbar-toggler mt-2 mx-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="fa fa-bars fa-2"></span>
@@ -66,6 +61,17 @@
                 </ul>
             </div>
         </nav>
+        <div class="container-fluid my-2" id="second-base">
+            <div class="col-10">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="images/metis_header_400.png">
+                    <source media="(max-width: 912px)" srcset="images/metis_header_500.png">
+                    <source media="(max-width: 1400px)" srcset="images/metis_header_750.png">
+                    <source media="(min-width: 1400px)" srcset="images/metis_header.png">
+                    <img src="images/metis_logo.png">
+                </picture>
+            </div>
+        </div>
         <div class="container-fluid">
             <div class="row pb-5 mt-5" id="second-base">
                 <div class="col-lg-4 mt-5">
@@ -76,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-5 mx-auto">
+                <div class="col-lg-4 mt-5 pt-5 mx-auto">
                     <div class="card shadow">
                         <div class="card-body">
                             <h3 class="card-title">Technical</h3>
@@ -131,17 +137,17 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <img src="images/ICAEW_CharteredAccountants_BLK_RGB2.png">
+                <div class="col-3 text-center">
+                    <img src="images/ICAEW_CharteredAccountants_BLK_RGB2.png" class="img-fluid" id="small">
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <img src="images/IFA_Logo_PNG1.png">
+                <div class="col-3 text-center">
+                    <img src="images/IFA_Logo_PNG1.png" class="img-fluid" id="small">
                 </div>
-                <div class="col-lg-3 col-md-6 text-center mt-3">
-                    <img src="images/amlcc.jpg">
+                <div class="col-3 text-center mt-3">
+                    <img src="images/amlcc.jpg" class="img-fluid" id="small">
                 </div>
-                <div class="col-lg-3 col-md-6 text-center mt-4">
-                    <img src="images/ACCA Member Logo Pack (Updated April 2016)/LOGOS FOR ONLINE USE/ACCA LOGO RED.png">
+                <div class="col-3 col-md-3 text-center mt-4">
+                    <img src="images/ACCA Member Logo Pack (Updated April 2016)/LOGOS FOR ONLINE USE/ACCA LOGO RED.png" class="img-fluid" id="acca">
                 </div>
                 <div></div>
             </div>
@@ -149,23 +155,23 @@
         <div class="container-fluid" id="second-base">
             <footer class="page-footer font-small mdb-color lighten-3 pt-4">
                 <div class="container text-center text-md-left">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-12">
+                    <div class="row" id="footer">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
                             <p>
                                 <i class="fas fa-home mr-3"></i>68 Tor Bryan, Ingatestone,<br> Essex, CM4 9HN
                             </p>
                         </div>
-                        <div class="col-lg-3 col-md-12">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
                             <p>
                                 <i class="fas fa-envelope mr-3"></i> info@metiscompliance.co.uk
                             </p>
                         </div>
-                        <div class="col-lg-3 col-md-12">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
                             <p>
                                 <i class="fas fa-phone mr-3"></i> 01277 353706 / 07833996654
                             </p>
                         </div>
-                        <div class="col-lg-3 col-md-12">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
                             <p>
                                 Company No: (England) 11247989 </p>
                         </div>
