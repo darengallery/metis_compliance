@@ -1,10 +1,12 @@
 <?php
 $name = $_POST['name'];
+$ifaMembership = $_POST['ifaMembership'];
+$practiceName = $_POST['practiceName'];
 $email = $_POST['email'];
-$contactPhone = $_POST['contactPhone'];
+$phone = $_POST['phone'];
 $message = $_POST['message'];
 
-$formcontent=" From: $name \n Email: $email \n Contact Phone: $contactPhone \n Message: $message";
+$formcontent=" From: $name \n IFA Membership number: $ifaMembership \n Practice Name: $practiceName \n Email: $email \n Contact Phone: $phone \n Enquiry: $message";
 $recipient = "darengallery@gmail.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";

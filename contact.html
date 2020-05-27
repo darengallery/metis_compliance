@@ -3,11 +3,13 @@
 
 <head>
     <!-- Meta Tags for Bootstrap 4 -->
-    <title>Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Metis - Contact</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Daren Gallery">
-    <meta name="description" content="Soccer coaching programmes for schools, teams and clubs. Qualified Coaches, all specifically tailored to your needs">
+    <meta name="description" content="compliance services to accountancy firms in the UK, cold file review, eqcr, frs102 (section1a), frs, 105, dpb, client money, anti-money laundering, sra, cpd, sorp, mentoring, small comapny, complaince review, limited liabilty partnerships">
 
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -78,48 +80,51 @@
         </div>
     </nav>
 
+    <!-- contact section -->
     <main class="container-fluid" id="base">
-        <div class="container" id="contact-section">
+        <div class="container" id="second-base">
             <div class="row my-5">
-                <div class="col-md-8 mx-auto" id="second-base">
+                <div class="col-10 mx-auto" id="second-base">
                     <h3 class="card-title text-center pt-1">Contact Us</h3>
-                    <form id="contact-form" method="post" action="/PHP/sendmail_metis.php" role="form"><br>
+                    <form id="contact-form" method="post" action="/PHP/sendmail.php" role="form"><br>
                         <div class="controls">
                             <p class="text-right">* required</p>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="form_name">Name *</label>
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter you name" required="required" data-error="name is required">
+                                        <input id="form_name" type="text" name="name" class="form-control" max="2014" min="2002" placeholder="Please enter your name" required="required" data-error="name is required">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="form_email">Contact email *</label>
-                                        <input id="email" type="email" name="email" class="form-control" placeholder="Please enter contact email" required="required" data-error="email is required">
+                                        <label for="form_email">Email address *</label>
+                                        <input type="email" id="form_email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="valid email is required">
                                         <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_phone">Contact telephone *</label>
-                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter contact number" required="required" data-error="number is required">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_enquiry">Nature of the enquiry </label>
-                                        <textarea name="enquiry" id="form_enquiry" class="form-control" placeholder="nature of the enquiry" rows="4"></textarea>
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_contactphone">Contact telephone *</label>
+                                        <input type="tel" id="form_contactPhone" name="contactPhone" class="form-control" placeholder="Please enter contact number" required="required" data-error="contact number is required">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_message">Nature of the enquiry </label>
+                                        <textarea name="message" id="form_message" class="form-control" placeholder="nature of the enquiry" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><br>
+                        <div class="col-md-6 pb-5">
+                            <input type="submit" class="btn btn-danger btn-send" value="Send form">
                         </div>
                     </form>
-                    <div class="col-md-6 pb-5">
-                        <input type="submit" class="btn btn-danger btn-send" value="Send form">
-                    </div>
                 </div>
             </div>
         </div>
