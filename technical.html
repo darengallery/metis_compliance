@@ -4,25 +4,40 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Metis Compliance</title>
+    <title>Metis - Technical helpline</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Daren Gallery">
     <meta name="description" content="compliance services to accountancy firms in the UK, cold file review, eqcr, frs102 (section1a), frs, 105, dpb, client money, anti-money laundering, sra, cpd, sorp, mentoring, small comapny, complaince review, limited liabilty partnerships">
+
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/style.css">
-
     <script src="https://kit.fontawesome.com/dee6c1b213.js" crossorigin="anonymous"></script>
 
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
     <div class="container-fluid" id="base">
+
+        <!-- Header -->
+        <header class="container-fluid" id="second-base">
+            <div class="col-10 pt-4">
+                <picture>
+                    <source media="(max-width: 912px)" srcset="images/metis_header_300.png" class="img-fluid" alt="header image">
+                    <source media="(max-width: 1400px)" srcset="images/metis_header_750.png" alt="header image">
+                    <source media="(min-width: 1400px)" srcset="images/metis_header.png" alt="header image">
+                    <img src="images/metis_logo.png" alt="logo image">
+                </picture>
+            </div>
+        </header>
+
+        <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="second-base">
             <button class="navbar-toggler mt-2 mx-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-				<span class="fa fa-bars fa-2"></span>
-            </button>
+            <span class="fa fa-bars fa-2"></span>
+        </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
@@ -36,11 +51,11 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Services
-                            </a>
+                            Services
+                        </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="CPD.html" target="_blank">CPD courses</a>
-                            <a class="dropdown-item" href="technical.html">Technical Helpline</a>
+                            <a class="dropdown-item" href="#">Technical Helpline</a>
                             <a class="dropdown-item" href="cold_file_review.html" target="_blank">Cold File Review - Quality Control File Reviews</a>
                             <a class="dropdown-item" href="EQCR.html" target="_blank">Engagement Quality Control Review (EQCR) and Hot File Reviews</a>
                             <a class="dropdown-item" href="efficiency.html" target="_blank">Efficiency Reviews</a>
@@ -58,23 +73,18 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ifa_contact.html">Legal</a>
+                        <a class="nav-link" href="legal.html">Legal</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div class="container-fluid my-2" id="second-base">
-            <div class="row">
-                <div class="col-10 mx-auto">
-                    <img src="images/metis_header.png" alt="metis_header" class="img-fluid py-2">
-                </div>
-            </div>
-        </div>
-        <div class="row pt-5" id="second-base">
+
+        <!-- Main section -->
+        <main class="row mt-5" id="second-base">
             <div class="col-12 mx-auto py-5">
                 <div class="card shadow">
                     <div class="card-body">
-                        <h1>Technical Helpline</h1>
+                        <h3 class="card-title">Technical Helpline</h3>
                         <p><span style="font-weight: bold;">Need more assistance than just a telephone conversation?</span> Sometimes if a cash flow or consolidation does not work then a chat on the telephone may not ‘cut the mustard’. <a href="ACR_whole_practice_review.html">We can review your work
                         and assist you when difficulties arise.</a> We can also review <a href="hands_on.html">audit files, accountancy files, financial statements and help you with a range of annual compliance reviews.</a></p>
                         <p>The helpline is normally open <span style="text-decoration: underline;">Monday to Friday</span> between 8am and 6pm, and we aim to provide an immediate answer wherever possible. We appreciate that often enquiries are urgent and
@@ -88,51 +98,56 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid">
+        </main>
+
+        <!-- Image section -->
+        <section class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6  text-center">
-                    <img src="images/ICAEW_CharteredAccountants_BLK_RGB2.png" class="img-fluid">
+                <div class="col-3 text-center">
+                    <img src="images/ICAEW_CharteredAccountants_BLK_RGB2.png" class="img-fluid" id="small" alt="icaew logo image">
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-                    <img src="images/IFA_Logo_PNG1.png" class="img-fluid">
+                <div class="col-3 text-center">
+                    <img src="images/IFA_Logo_PNG1.png" class="img-fluid" id="small" alt="ifa logo">
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 text-center mt-3">
-                    <img src="images/amlcc.jpg" class="img-fluid">
+                <div class="col-3 text-center mt-3">
+                    <img src="images/amlcc.jpg" class="img-fluid" id="small" alt="amlcc logo">
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 text-center mt-4">
-                    <img src="images/ACCA Member Logo Pack (Updated April 2016)/LOGOS FOR ONLINE USE/ACCA LOGO RED.png" class="img-fluid">
+                <div class="col-3 col-md-3 text-center mt-4">
+                    <img src="images/ACCA Member Logo Pack (Updated April 2016)/LOGOS FOR ONLINE USE/ACCA LOGO RED.png" class="img-fluid" id="acca" alt="acca logo">
                 </div>
                 <div></div>
             </div>
-        </div>
-        <div class="container-fluid" id="second-base">
-            <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+        </section>
+
+        <!-- Footer-->
+        <footer class="container-fluid" id="second-base">
+            <div class="page-footer font-small mdb-color lighten-3 pt-4">
                 <div class="container text-center text-md-left">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-12">
+                    <div class="row" id="footer">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
                             <p>
                                 <i class="fas fa-home mr-3"></i>68 Tor Bryan, Ingatestone,<br> Essex, CM4 9HN
                             </p>
                         </div>
-                        <div class="col-lg-3 col-md-12">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
                             <p>
                                 <i class="fas fa-envelope mr-3"></i> info@metiscompliance.co.uk
                             </p>
                         </div>
-                        <div class="col-lg-3 col-md-12">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
                             <p>
                                 <i class="fas fa-phone mr-3"></i> 01277 353706 / 07833996654
                             </p>
                         </div>
-                        <div class="col-lg-3 col-md-12">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
                             <p>
                                 Company No: (England) 11247989 </p>
                         </div>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
+
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
             <a href="https://darengallery.com/"> darengallery.com</a>

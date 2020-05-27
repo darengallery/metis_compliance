@@ -8,23 +8,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Daren Gallery">
     <meta name="description" content="Soccer coaching programmes for schools, teams and clubs. Qualified Coaches, all specifically tailored to your needs">
+
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/contact-form.css">
-    <link rel="stylesheet" href="CSS/style.css">
-
     <script src="https://kit.fontawesome.com/dee6c1b213.js" crossorigin="anonymous"></script>
 
+    <!--Stylesheet -->
+    <link rel="stylesheet" href="CSS/contact-form.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 
 <body>
-    <div class="container-fluid" id="base">
+    <!-- Header -->
+    <header class="container-fluid" id="second-base">
+        <div class="col-10 pt-4">
+            <picture>
+                <source media="(max-width: 912px)" srcset="images/metis_header_300.png" class="img-fluid" alt="header image">
+                <source media="(max-width: 1400px)" srcset="images/metis_header_750.png" alt="header image">
+                <source media="(min-width: 1400px)" srcset="images/metis_header.png" alt="header image">
+                <img src="images/metis_logo.png" alt="logo image">
+            </picture>
+        </div>
+    </header>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="second-base">
+        <button class="navbar-toggler mt-2 mx-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="fa fa-bars fa-2"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="clients.html">Clients</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="CPD.html" target="_blank">CPD courses</a>
+                        <a class="dropdown-item" href="technical.html" target="_blank">Technical Helpline</a>
+                        <a class="dropdown-item" href="cold_file_review.html" target="_blank">Cold File Review - Quality Control File Reviews</a>
+                        <a class="dropdown-item" href="EQCR.html" target="_blank">Engagement Quality Control Review (EQCR) and Hot File Reviews</a>
+                        <a class="dropdown-item" href="efficiency.html" target="_blank">Efficiency Reviews</a>
+                        <a class="dropdown-item" href="hands_on.html" target="_blank">Hands on assistance</a>
+                        <a class="dropdown-item" href="ACR_anti_money.html" target="_blank">Annual Compliance reviews - Anti-money laundering</a>
+                        <a class="dropdown-item" href="ACR_client_money.html" target="_blank">Annual Compliance reviews - Client money</a>
+                        <a class="dropdown-item" href="ACR_DPB.html" target="_blank">Annual Compliance reviews - DPB</a>
+                        <a class="dropdown-item" href="ACR_audit.html" target="_blank">Annual Compliance reviews - Audit</a>
+                        <a class="dropdown-item" href="ACR_whole_practice_review.html" target="_blank">Annual Compliance reviews - Whole Practice Review</a>
+                        <a class="dropdown-item" href="MAP.html" target="_blank">Mentoring Audit Practices</a>
+                        <a class="dropdown-item" href="charges.html" target="_blank">Charges</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="legal.html">Legal</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container-fluid" id="base">
         <div class="container" id="contact-section">
             <div class="row my-5">
                 <div class="col-md-8 mx-auto" id="second-base">
-                    <h2>Contact Us</h2>
-                    <form id="contact-form" method="post" action="/PHP/sendmail.php" role="form"><br>
+                    <h3 class="card-title text-center pt-1">Contact Us</h3>
+                    <form id="contact-form" method="post" action="/PHP/sendmail_metis.php" role="form"><br>
                         <div class="controls">
                             <p class="text-right">* required</p>
                             <div class="row">
@@ -64,18 +123,66 @@
                 </div>
             </div>
         </div>
+    </main>
+
+    <!-- Image section -->
+    <section class="container-fluid">
         <div class="row">
-            <div class="col-lg-6 mx-auto">
-                <img src="images/metis_header.png" class="img-fluid pb-5">
+            <div class="col-3 text-center">
+                <img src="images/ICAEW_CharteredAccountants_BLK_RGB2.png" class="img-fluid" id="small" alt="icaew logo image">
+            </div>
+            <div class="col-3 text-center">
+                <img src="images/IFA_Logo_PNG1.png" class="img-fluid" id="small" alt="ifa logo">
+            </div>
+            <div class="col-3 text-center mt-3">
+                <img src="images/amlcc.jpg" class="img-fluid" id="small" alt="amlcc logo">
+            </div>
+            <div class="col-3 col-md-3 text-center mt-4">
+                <img src="images/ACCA Member Logo Pack (Updated April 2016)/LOGOS FOR ONLINE USE/ACCA LOGO RED.png" class="img-fluid" id="acca" alt="acca logo">
+            </div>
+            <div></div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="container-fluid" id="second-base">
+        <div class="page-footer font-small mdb-color lighten-3 pt-4">
+            <div class="container text-center text-md-left">
+                <div class="row" id="footer">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <p>
+                            <i class="fas fa-home mr-3"></i>68 Tor Bryan, Ingatestone,<br> Essex, CM4 9HN
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <p>
+                            <i class="fas fa-envelope mr-3"></i> info@metiscompliance.co.uk
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <p>
+                            <i class="fas fa-phone mr-3"></i> 01277 353706 / 07833996654
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <p>
+                            Company No: (England) 11247989 </p>
+                    </div>
+                </div>
             </div>
         </div>
+    </footer>
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://darengallery.com/"> darengallery.com</a>
+    </div>
     </div>
 
-
-
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
-
-
+    <!-- Bootstrap 4 Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
+</html>

@@ -4,7 +4,7 @@ $lastName = $_POST['lastName'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-$formcontent=" First Name: $firstName \n Last Name: $lastName \n email: $email \n Message: $message";
+$formcontent = " First Name: $firstName \n Last Name: $lastName \n email: $email \n Message: $message";
 $recipient = "daren_gallery@hotmail.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
