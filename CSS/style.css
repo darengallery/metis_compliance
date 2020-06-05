@@ -140,6 +140,14 @@ h2::after {
     height: 100px;
 }
 
+.nav-link {
+    font-weight: bolder;
+}
+
+#head-info {
+    font-weight: bold;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 
