@@ -146,6 +146,11 @@ h2::after {
 
 #head-info {
     font-weight: bold;
+    background-color: #dcdcdc;
+}
+
+#info {
+    background-color: #dcdcdc;
 }
 
 
@@ -162,7 +167,7 @@ h2::after {
         height: auto;
         padding-bottom: 15px;
     }
-    #footer {
+    #head-info {
         font-size: smaller;
     }
 }
